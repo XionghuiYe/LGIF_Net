@@ -131,16 +131,6 @@ def load_images(dataset_name):
     
     return images, subjects, subjectsVideos
 
-def save_images_pkl(dataset_name, images, subjectsVideos, subjects):
-    pickle.dump(images, open(dataset_name + "_images_crop.pkl", "wb") )
-    pickle.dump(subjectsVideos, open(dataset_name + "_subjectsVideos_crop.pkl", "wb") )
-    pickle.dump(subjects, open(dataset_name + "_subjects_crop.pkl", "wb") )
-
-def load_images_pkl(dataset_name):
-    images = pickle.load( open( dataset_name + "_images_crop.pkl", "rb" ) )
-    subjectsVideos = pickle.load( open( dataset_name + "_subjectsVideos_crop.pkl", "rb" ) )
-    subjects = pickle.load( open( dataset_name + "_subjects_crop.pkl", "rb" ) )
-    return images, subjectsVideos, subjects
 
 
 
