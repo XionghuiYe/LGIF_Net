@@ -16,7 +16,7 @@ from sklearn.model_selection import LeaveOneGroupOut
 from scipy.signal import find_peaks
 from __utils__.mean_average_precision.mean_average_precision import MeanAveragePrecision2d
 from models import SOFTNet, SLSwinTransformer
-from models.LGIFormer_soft_net import LGIFNet
+from models.LGIFNet import LGIFNet
 
 random.seed(1)
 
